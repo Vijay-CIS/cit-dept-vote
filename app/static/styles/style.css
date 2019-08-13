@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/back.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container form input {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #2196F3
+}
+
+.login-container form button {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.login-container form span {
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #2196F3;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    border-bottom: 1px solid #2196F3
+}
+
+td {
+    padding: 10px;
+}
