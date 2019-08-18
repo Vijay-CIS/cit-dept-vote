@@ -8,29 +8,40 @@
 </head>
 
 <body>
-    <h1>Cast your Vote for a Department of your Choice</h1>
-    <table>
-        <tr class="head">
-            <th>Department</th>
-            <th>Description</th>
-            <th>Vote</th>
-        </tr>
-        <tr>
-            <td>IT</td>
-            <td>IT Department is a goood dept</td>
-            <td><button>VOTE</button></td>
-        </tr>
-        <tr>
-            <td>CSE</td>
-            <td>IT Department is a goood dept</td>
-            <td><button>VOTE</button></td>
-        </tr>
-        <tr>
+    <div class="page-container">
+        <h1>Cast your Vote for a Department of your Choice</h1>
+        <table>
+            <tr class="head">
+                <th>Department</th>
+                <th>Description</th>
+                <th>Vote</th>
+            </tr>
+            <tr>
+                <td>CSE</td>
+                <td class="limit">CSE Department is a goood dept, CSE Department is a goood dept, CSE Department is a goood dept, CSE
+                    Department is a goood dept, CSE Department is a goood dept, CSE Department is a goood dept, CSE
+                    Department is a goood dept</td>
+                <td><a
+                        href="/submit-vote/CSE?name={{user['name']}}&email={{user['email']}}&school={{user['school']}}">VOTE</a>
+                </td>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td class="limit">IT Department is a goood dept</td>
+                <td><a
+                        href="/submit-vote/IT?name={{user['name']}}&email={{user['email']}}&school={{user['school']}}">VOTE</a>
+                </td>
+            </tr>
+
+            <!-- ADD MORE DEPTS IN THIS FORMAT. Change "/submit-vote/<dept-name>"  -->
+
+            <!-- <tr>
             <td>ECE</td>
             <td>IT Department is a goood dept</td>
-            <td><button>VOTE</button></td>
-        </tr>
-    </table>
+            <td><a href="/submit-vote/ECE">VOTE</button></td>
+        </tr> -->
+        </table>
+    </div>
 </body>
 
 </html>

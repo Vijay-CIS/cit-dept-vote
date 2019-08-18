@@ -8,21 +8,38 @@
 </head>
 
 <body>
-    <h1>Voters List</h1>
-    <table>
-        <tr class="head">
-            <th>Name</th>
-            <th>E-Mail</th>
-            <th>School</th>
-        </tr>
-        {% for key in votes %}
-        <tr>
-           <td> {{ key['name'] }} </td>
-           <td> {{ key['email'] }} </td>
-           <td> {{ key['school'] }} </td>
-        </tr>
-     {% endfor %}
-    </table>
+    <div class="page-container">
+        <h1>Total Votes</h1>
+        <table>
+            <tr class="head">
+                <th>CSE</th>
+                <th>IT</th>
+                <!-- REPEAT FOR ALL DEPTS -->
+            </tr>
+            <tr>
+                <td> {{ depts['CSE'] }} </td>
+                <td> {{ depts['IT'] }} </td>
+                <!-- REPEAT FOR ALL DEPTS -->
+            </tr>
+        </table>
+        <h1>Voters List</h1>
+        <table>
+            <tr class="head">
+                <th>Name</th>
+                <th>E-Mail</th>
+                <th>School</th>
+                <th>Voted For</th>
+            </tr>
+            {% for key in votes %}
+            <tr>
+                <td> {{ key['name'] }} </td>
+                <td> {{ key['email'] }} </td>
+                <td> {{ key['school'] }} </td>
+                <td> {{ key['dept'] }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 </body>
 
 </html>
